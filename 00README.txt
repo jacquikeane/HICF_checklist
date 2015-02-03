@@ -11,12 +11,12 @@ Install the perl module and script
 
 Download the Perl module and script:
 
-  https://www.midasuk.org/validator/Bio-Metadata-Validator-1.150070.tar.gz
+  https://www.midasuk.org/validator/Bio-Metadata-Validator-1.150340.tar.gz
 
 The usual way to install a Perl module is something like this:
 
-  shell% tar zxf Bio-Metadata-Validator-1.150070.tar.gz
-  shell% cd Bio-Metadata-Validator-1.150070
+  shell% tar zxf Bio-Metadata-Validator-1.150340.tar.gz
+  shell% cd Bio-Metadata-Validator-1.150340
   shell% perl Makefile.PL
   ...
   shell% make install
@@ -26,7 +26,7 @@ However, this module has quite a number of dependencies, so it may be easier to
 use cpanm (see https://github.com/miyagawa/cpanminus) to install the tarball
 directly. cpanm will detect and install the pre-requisites automatically:
 
-  shell% cpanm Bio-Metadata-Validator-1.150070.tar.gz
+  shell% cpanm Bio-Metadata-Validator-1.150340.tar.gz
   ...
 
 After installation you should be able to run the script something like:
@@ -93,7 +93,7 @@ check the embedded error messages:
   'broken_manifest.csv' is invalid. Found 1 invalid row.
   wrote only invalid rows from validated file to 'invalid_rows.csv'.
   shell% less invalid_rows.csv
-  1,1,Example description,WTSI,703339,Staphylococcus aureus 04-02981,"Tate JG, Keane J",123,05/10/2013,GAZ:00444180,yes,Homo sapiens,healthy,BTO:0000645,,I,,630,,"tetracyclin;S;40,erythromycin;R;50;Peru",,,,,, [value in field 'collection_date' is not valid]
+  1,1,Example description,CAMBRIDGE,703339,Staphylococcus aureus 04-02981,"Tate JG, Keane J",123,05/10/2013,GAZ:00444180,yes,Homo sapiens,healthy,BTO:0000645,inpatient,,I,,630,,"tetracyclin;S;40,erythromycin;R;50;Peru",,,,,, [value in field 'collection_date' is not valid]
 
 Scrolling to the end of the line you can see that there was a single error on a
 one row of the manifest. In this case the date was specified in an invalid
@@ -105,7 +105,7 @@ Resources
 
 These are the files that you will need to run the validator:
 
-https://www.midasuk.org/validator/Bio-Metadata-Validator-1.150090.tar.gz
+https://www.midasuk.org/validator/Bio-Metadata-Validator-1.150340.tar.gz
     Perl module
 https://www.midasuk.org/validator/HICF_checklist/00README.txt
     README containing this documentation
